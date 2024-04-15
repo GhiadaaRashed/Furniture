@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.padding{
+    padding: 6rem 4rem;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.borderra{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.borderrad{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+/*start nav*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    height: 60px;
+    position: fixed;
+    width:100vw;
+    z-index: 1;
+}
+nav h1{
+    color: #054C73;
+    font-weight:600px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 562px;
+}
+nav svg{
+    display: none;
+}
+nav ul a{
+    text-decoration: none;
+    color: var(--font-color, #333);
+}
+.navul {
+    background-color: white;
+    padding: 2rem 8rem 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.navul .cancel{
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+.navul p a{
+    text-decoration: none;
+}
+.block{
+    display: block;
+}
+.navul p{
+    margin-top: 20px;
+}
+/*end nav*/
+/*start hero*/
+.hero {
+    width: 100vw;
+    height: 100vh;
+}
+.hero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.hero .info{
+    position: absolute;
+    top:130px;
+    right:0;
+    max-width: 643px;
+    max-height: 446px;
+    background-color: #DFE9F4;
+    padding: 40px 40px 0 50px;
+    z-index: 0;
+}
+.hero .info span{
+    color:#333333 ;
+    font-weight: 50px;
+}
+.hero .info h1{
+    color:#054C73;
+    line-height: 50px;
+    max-width:300px;
+    font-weight: 700px;
+}
+.hero .info p{
+    color:#333333;
+    max-width: 455px;
+}
+button{
+    padding:20px 50px;
+    background-color: #054C73;
+    border-radius: 30px;
+    border:none;
+    margin: 40px 0 30px 0;
+    color: #ffff;
+}
+/*end hero*/
+/*srart first section*/
+.first {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 30px;
+    padding: 46px 0;
+    background-color: #F2F5FF;
+}
+.first .card{
+    display: flex;
+    width: 350px;
+    gap: 30px;
+}
+.first .card .data h3{
+    color: #333333;
+    font-weight: 75px;
+}
+.first .card .data p{
+    line-height: 40px;
+    color: #333333;
+}
+/*end first section*/
+/*start second section*/
+.inf {
+text-align: center;
+}
+.second .inf p{ 
+    color: #666666;
+    margin-top: 20px;
+    padding: 10px 40px;
+}
+.second .card2 ,.forth .card2, .fifth .card2{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 100px;
+    position: relative;
+}
+.second .card2 .img{
+    position: relative;
+    bottom: 40px;
+}
+.second .card2 .emptyroom{
+    background-image: url(./../img/interior-has-yellow-armchair-empty-gray-wall-background\ 1.png);
+    width: 364px;
+    height:  460.254px;
+    border-bottom-right-radius: 25%;
+    flex-shrink: 0;
+}
+/*end second section*/
+/*start third section*/
+.third{
+    display: flex;
+    justify-content: space-between;
+    padding:100px 10% ;
+}
+h2 ,h3{
+    color: #333333;
+    text-align: center;
+}
+.third div p{
+    width: 400px;
+    text-align: start;
+}
+.third .beautify div {
+    width: 370px;
+    color: #666666;
+    margin-top: 50px;
+
+}
+
+/*end third section*/
+/*start forth section*/
+.forth{
+    padding: 100px 0;
+    border-bottom: #D7D6D6 solid 2px;
+}
+.forth p ,.fifth .card2 p,.fifth p,.sixth p{
+    color: #666666;
+    margin-top: 20px;
+    padding: 10px 20px;
+    
+}
+.forth .card2 img, .fifth .card2 img {
+    border-radius: 5px;
+}
+/*end forth section*/
+/*start fifth section*/
+.fifth .card2 p{
+    width:360px;
+    text-align: center;
+}
+.fifth .card2 div .position{
+    position: relative;
+}
+.fifth .card2 div .position .imgellipse{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    font-size: 20px;
+    font-weight: 40px;
+    color: white;
+}
+/*end fifth section*/
+/*start sixth section*/
+.sixth{
+    width: 100vw;
+    background-color: #F2F5FF;
+    padding: 90px 0;
+}
+.sixth .form{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 80px 0 ;
+    height: 76px;
+}
+/*end sixth section*/
+/*start footer*/
+footer{
+    background-color: #054C73;
+    padding: 80px 70px;
+}
+footer h3, footer p{
+    color: white;
+    margin-bottom: 25px;
+}
+footer p{
+    max-width: 400px;
+}
+footer .card3{
+    display: flex;
+    justify-content: space-between;
+}
+footer .card3 div h3{
+    text-align: end;
+}
+.sixth input{
+    height: 30px;
+}
+/*end footer*/
+@media screen and (max-width:992px) {
+    .padding{
+        padding: 2rem 1rem;
+    }
+    nav ul {
+        display: none;
+    }
+    nav svg{
+        display: block;
+    }
+    .hero .info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    } 
+    .first{
+        flex-direction: column-reverse;
+    }    
+    .second .card2 .img{
+        position: unset;
+        max-width: 400px;
+    }
+    .second .card2 ,.third,.forth .card2,.fifth .card2{
+        display: flex;
+        justify-content: center;
+        row-gap: 30px;
+    }
+    footer .card2 div h3,footer .card2 .beautify{
+        text-align: center;
+    }
+    .sixth .form{
+        display: flex;
+        flex-wrap: wrap;
+    }.borderra{
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .borderrad{
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    .beautify{
+        text-align: center;
+    }
+
+}
+@media screen and (max-width:542px){
+    .hero .info{
+        background-color: unset;
+        text-align: center;
+    }
+    .first .card{
+        width: 80%;
+        margin: auto;
+        margin-top: 40px;
+    }
+    .third img{
+        width: 290px;
+    }
+    .second .card2 img,.second .card2 .emptyroom{
+        width: 290px;
+    }
+    .second .card2 .lamp{
+        width: 60px;
+    }
+    .forth .card2 img{
+        width: 290px;
+    }
+    .fifth .card2 .img{
+        width: 290px;
+    }
+    .fifth .card2 div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .third div p{
+        width: 100%;
+        text-align: center;
+    }
+    .borderrad{
+        margin-top: 30px;
+    }
+}
